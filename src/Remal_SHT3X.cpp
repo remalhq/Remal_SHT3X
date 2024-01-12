@@ -4,7 +4,7 @@
  *  # ALL INFO CAN BE FOUND IN THE HEADER FILE #
  */
 #include "Remal_SHT3X.h"
-#include <cmath>
+#include <math.h>
 
 
 // Public Functions
