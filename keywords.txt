@@ -6,6 +6,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 Repeatability KEYWORD1
+PeriodicFrequency KEYWORD1
 SHT3x KEYWORD1
 
 #######################################
@@ -20,15 +21,23 @@ GetTemperatureCelsius KEYWORD2
 GetTemperatureFahrenheit KEYWORD2
 GetHumidity KEYWORD2
 SetRepeatability KEYWORD2
+SetPeriodicFrequency KEYWORD2
+SetHighAlertLimit KEYWORD2
+SetLowAlertLimit KEYWORD2
+GetHumidityHighSetLimit KEYWORD2
+GetHumidityHighClearLimit KEYWORD2
+GetHumidityLowClearLimit KEYWORD2
+GetHumidityLowSetLimit KEYWORD2
+GetTemperatureHighSetLimit KEYWORD2
+GetTemperatureHighClearLimit KEYWORD2
+GetTemperatureLowClearLimit KEYWORD2
+GetTemperatureLowSetLimit KEYWORD2
+StartPeriodic KEYWORD2
+StartPeriodicART KEYWORD2
+StopPeriodic KEYWORD2
+GetTemperaturePeriodic KEYWORD2
+GetHumidityPeriodic KEYWORD2
 Measure KEYWORD2
-MeasurePeriodic KEYWORD2
-MeasurePeriodic1MPS KEYWORD2
-MeasurePeriodic2MPS KEYWORD2
-MeasurePeriodic4MPS KEYWORD2
-MeasurePeriodic10MPS KEYWORD2
-FetchData KEYWORD2
-MeasurePeriodicART KEYWORD2
-Break KEYWORD2
 EnableHeater KEYWORD2
 DisableHeater KEYWORD2
 WriteCommand KEYWORD2
@@ -36,11 +45,25 @@ Read3Bytes KEYWORD2
 Read6Bytes KEYWORD2
 GetMSB KEYWORD2
 GetLSB KEYWORD2
+CombineBytes KEYWORD2
 RawValueToCelsius KEYWORD2
 RawValueToFahrenheit KEYWORD2
 RawValueToHumidity KEYWORD2
 CalculateCRC8 KEYWORD2
-VerifyCRC8 KEYWORD2
+CalculateLimit KEYWORD2
+WriteAlertLimit KEYWORD2
+ReadHighSetAlertLimit KEYWORD2
+ReadHighClearAlertLimit KEYWORD2
+ReadLowClearAlertLimit KEYWORD2
+ReadLowSetAlertLimit KEYWORD2
+CelsiusToRawValue KEYWORD2
+HumidityToRawValue KEYWORD2
+MeasurePeriodicHalfMPS KEYWORD2
+MeasurePeriodic1MPS KEYWORD2
+MeasurePeriodic2MPS KEYWORD2
+MeasurePeriodic4MPS KEYWORD2
+MeasurePeriodic10MPS KEYWORD2
+FetchData KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
@@ -77,3 +100,11 @@ HEATER_ENABLE_COMMAND LITERAL1
 HEATER_DISABLE_COMMAND LITERAL1
 READ_STATUS_REGISTER_COMMAND LITERAL1
 CLEAR_STATUS_REGISTER_COMMAND LITERAL1
+ALERT_HIGH_SET_READ LITERAL1
+ALERT_HIGH_CLEAR_READ LITERAL1
+ALERT_LOW_CLEAR_READ LITERAL1
+ALERT_LOW_SET_READ LITERAL1
+ALERT_HIGH_SET_WRITE LITERAL1
+ALERT_HIGH_CLEAR_WRITE LITERAL1
+ALERT_LOW_CLEAR_WRITE LITERAL1
+ALERT_LOW_SET_WRITE LITERAL1

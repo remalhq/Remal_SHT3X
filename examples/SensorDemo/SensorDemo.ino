@@ -38,7 +38,7 @@ void setup()
   // Set the repeatability mode to high (e_high)
   // The repeatability mode determines the measurement accuracy and energy consumption.
   // Available options are e_low, e_medium, and e_high.
-  sensor.SetRepeatability(e_high);
+  sensor.SetRepeatability(Repeatability::e_high);
 }
 
 void loop() 
